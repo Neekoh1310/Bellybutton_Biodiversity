@@ -1,0 +1,43 @@
+body {
+    background-image: url('../images/bacteria.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 150px;
+}
+.jumbotron#one {
+    background-image: url("../images/belly.jpeg");
+    background-position: bottom;
+    background-size: cover;
+    border-style: groove;    
+}
+#summary {
+    background-color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-right: 0;
+    margin-left: 0;
+    border-style: groove;
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+#bubble {
+    margin-top: 25px;
+    /* margin-bottom: 150px; */
+} 
+#test, #selDataset {
+    margin-top: 1px;
+    margin-left: 10px;
+}
+#panel {
+    height: 320px;
+}
+#paneltxt {
+    font-size: 17px;
+    margin-left: 12px;
+    margin-top: 5px;
+}

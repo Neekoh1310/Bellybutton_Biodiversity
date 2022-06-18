@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center" id="one">
+        <h1 style="background-color:white; font-family: Monaco">Belly Button Biodiversity Dashboard</h1><br>
+        <p style="background-color:white;">Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <p id="summary">
+        Rosa, a microbiologist for the startup company Improbable Foods, is seeking to discover a species of
+        bacteria that synthesizes proteins that taste like beef!  After successfully synthesizing meat from other
+        sources like algae,
+        fungi, and plant roots, she's still on the hunt for the perfect taste.  Rosa believes that there just might
+        be the right bacteria for this project hiding out somewhere on a human body.  She has decided to take navel
+        samples from people across the country and assigned them anonymous identification numbers.  This website is
+        a projection of the experimental results run on the samples and may perhaps provide the participants with
+        some interesting insights about their personal microbiome.  Please, explore the data and see what you find!
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-md-2" id="bacteria">
+        <div class="well" id="well">
+          <h5 id="test">Test Subject ID No.:</h5>
+          <!-------------- <select id="selDataset"></select> --------------->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary" id="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+</body>
+
+</html>
