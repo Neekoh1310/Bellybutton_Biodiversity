@@ -1,12 +1,12 @@
 body {
-    background-image: url('../images/bacteria.jpeg');
+    background-image: url('../images/bacteria1.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     margin-bottom: 150px;
 }
 .jumbotron#one {
-    background-image: url("../images/belly.jpeg");
+    background-image: url("../images/belly1.jpeg");
     background-position: bottom;
     background-size: cover;
     border-style: groove;    
